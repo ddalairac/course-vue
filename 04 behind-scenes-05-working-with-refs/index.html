@@ -14,13 +14,17 @@
   </head>
   <body>
     <header>
-      <h1>Vue Course Goals</h1>
+      <h1>Vue Behind The Scenes</h1>
     </header>
-    <section id="user-goal">
-      <h2>My Course Goal</h2>
-      <!-- <p v-html="outputGoal()"></p> -->
-      <p>{{ outputGoal() }}</p>
-      <p>Learn more <a v-bind:href="vueLink">about Vue</a>.</p>
+    <section id="app">
+      <h2>How Vue Works</h2>
+      <input type="text" ref="userText">
+      <button @click="setText">Set Text</button>
+      <p>{{ message }}</p>
+    </section>
+    <section id="app2">
+      <!-- DOES NOT WORK: <p>{{ message }}</p> -->
+      
     </section>
   </body>
 </html>
