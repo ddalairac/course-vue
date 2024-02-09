@@ -87,37 +87,43 @@ button:active {
   border-radius: 12px;
 }
 .animate {
-  /* transform: translateX(-150px); */
+  transform: translateX(-30px);
   animation: slide-fade 0.3s ease-out forwards;
 }
 
 .para-enter-from {
-  /* opacity: 0;
-  transform: translateY(-30px); */
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  transform: translateY(-18px);
 }
-
 .para-enter-active {
-  animation: slide-scale 0.3s ease-out;
+  transition: all 0.5s ease-in-out;
+  /* animation: slide-scale 0.3s ease-out; */
 }
-
 .para-enter-to {
-  /* opacity: 1;
-  transform: translateY(0); */
+  opacity: 1;
+  height: 18px;
+  margin: 16px 0;
+  transform: translateY(0);
 }
 
 .para-leave-from {
-  /* opacity: 1;
-  transform: translateY(0); */
+  opacity: 1;
+  height: 18px;
+  margin: 16px 0;
+  transform: translateY(0);
 }
-
 .para-leave-active {
-  /* transition: all 0.3s ease-in; */
-  animation: slide-scale 0.3s ease-out;
+  transition: all .5s ease-in-out;
+  /* animation: class-with-keyframes 0.3s ease-out;  */
+  /* animation: slide-scale 0.3s ease-out; */
 }
-
 .para-leave-to {
-  /* opacity: 0;
-  transform: translateY(30px); */
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  transform: translateY(-18px);
 }
 
 @keyframes slide-scale {
@@ -130,7 +136,7 @@ button:active {
   }
 
   100% {
-    transform: translateX(-150px) scale(1);
+    transform: translateX(-118px) scale(1);
   }
 }
 </style>
